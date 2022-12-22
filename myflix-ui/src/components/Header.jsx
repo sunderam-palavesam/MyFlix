@@ -12,7 +12,7 @@ export default function Header(props) {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <button onClick={() => navigate(props.login ? "/login" : "/signup")}>{props.login ? "Log In" : "Sign In"}</button></Container>
+      <button onClick={() => navigate(props.login ? "/login" : "/signup")}>{props.login ? "Log In" : "Sign Up"}</button></Container>
 
 
   )
@@ -22,7 +22,7 @@ const Container = styled.div`;
 padding:0 4rem;
 .logo{
   img{
-    height : 5rem;
+    height : 8rem;
   }
 }
 button{

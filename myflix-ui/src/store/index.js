@@ -16,7 +16,7 @@ import {
     const {
       data: { genres },
     } = await axios.get(
-      "https://api.themoviedb.org/3/genre/movie/list?api_key=3d39d6bfe362592e6aa293f01fbcf9b9"
+      "https://api.themoviedb.org/3/genre/movie/list?api_key=7b05d5881d33bef915b85581cd8d594b"
     );
     return genres;
   });
@@ -56,7 +56,7 @@ import {
         netflix: { genres },
       } = thunkAPI.getState();
       return getRawData(
-        `https://api.themoviedb.org/3/discover/${type}?api_key=3d39d6bfe362592e6aa293f01fbcf9b9&with_genres=${genre}`,
+        `https://api.themoviedb.org/3/discover/${type}?api_key=7b05d5881d33bef915b85581cd8d594b&with_genres=${genre}`,
         genres
       );
     }

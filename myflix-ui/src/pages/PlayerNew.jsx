@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BsArrowLeft } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import Waterfall from "../assets/Waterfall.mp4";
+import SG from "../assets/SG.mp4";
 export default function Player() {
   const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ export default function Player() {
         <div className="back">
           <BsArrowLeft onClick={() => navigate(-1)} />
         </div>
-        <video src={Waterfall} autoPlay loop controls muted />
+        <video src={SG} autoPlay loop controls muted />
       </div>
     </Container>
   );
