@@ -9,6 +9,7 @@ set -x
 npm run build
 set +x
 
+
 echo 'The following "npm" command runs your Node.js/React application in'
 echo 'development mode and makes the application available for web browsing.'
 echo 'The "npm start" command has a trailing ampersand so that the command runs'
@@ -22,6 +23,7 @@ npm start &
 sleep 1
 echo $! > .pidfile
 set +x
+
 
 echo 'Now...'
 echo 'Visit http://localhost:3000 to see your Node.js/React application in action.'
